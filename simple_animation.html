@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .simple_animation{
+            width: 200px;
+            height: 200px;
+            background-color: greenyellow;
+            position: relative;
+            animation: myfirstanimation;
+            -webkit-animation: myfirstanimation;
+            animation-duration: 5s;
+            animation-iteration-count: 4;
+            animation-direction: normal;
+            animation-delay: 1s;
+        }
+
+        @keyframes myfirstanimation {
+            0%{background-color: rebeccapurple;left: 0px;top: 0px;}
+            25%{background-color: aqua;left: 400px;top: 0px;}
+            50%{background-color: red;left: 400px;top: 400px}
+            75%{background-color: grey;left: 0px;top: 400px;}
+            100%{background-color: rebeccapurple;left: 0px;top: 0px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="simple_animation"></div>
+</body>
+</html>
