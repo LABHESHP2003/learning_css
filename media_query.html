@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Page with Image and Background</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      transition: background-color 0.3s ease;
+      text-align: center;
+      background-color: white; /* Default */
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #333;
+    }
+
+    h3 {
+      color: #666;
+    }
+
+    p {
+      font-size: 18px;
+      color: #444;
+    }
+
+    img.responsive-image {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      margin: 20px auto;
+      display: block;
+      border: 5px solid transparent;
+      transition: all 0.3s ease;
+    }
+
+    /* Extra small devices (<576px) */
+    @media (max-width: 575.98px) {
+      body {
+        background-color: #ffcccc; /* Light red */
+      }
+
+      h1 {
+        font-size: 22px;
+        color: #990000;
+      }
+
+      h3 {
+        display: none;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      img.responsive-image {
+        display: none; /* Hide image */
+      }
+    }
+
+    /* Small devices (576px–767.98px) */
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      body {
+        background-color: #fff2cc; /* Light yellow */
+      }
+
+      h1 {
+        font-size: 26px;
+        color: #cc7a00;
+      }
+
+      h3 {
+        display: block;
+        color: #996600;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      img.responsive-image {
+        max-width: 300px;
+        border: 3px dashed #cc7a00;
+      }
+    }
+
+    /* Medium devices (768px–991.98px) */
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      body {
+        background-color: #ccffcc; /* Light green */
+      }
+
+      h1 {
+        font-size: 30px;
+        color: #006600;
+      }
+
+      h3 {
+        font-size: 18px;
+        color: #339933;
+      }
+
+      p {
+        font-size: 17px;
+      }
+
+      img.responsive-image {
+        max-width: 350px;
+        border: 5px solid #66cc66;
+      }
+    }
+
+    /* Large devices (992px–1199.98px) */
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      body {
+        background-color: #cce5ff; /* Light blue */
+      }
+
+      h1 {
+        font-size: 36px;
+        color: #003399;
+      }
+
+      h3 {
+        font-size: 20px;
+        color: #004080;
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+      img.responsive-image {
+        max-width: 400px;
+        border-radius: 20px;
+        border: 5px solid #003399;
+      }
+    }
+
+    /* Extra large devices (≥1200px) */
+    @media (min-width: 1200px) {
+      body {
+        background-color: #f2f2f2; /* Light gray */
+      }
+
+      h1 {
+        font-size: 40px;
+        color: #1a1a1a;
+      }
+
+      h3 {
+        font-size: 22px;
+        color: #333333;
+      }
+
+      p {
+        font-size: 20px;
+      }
+
+      img.responsive-image {
+        max-width: 500px;
+        border: 5px double #1a1a1a;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Responsive Web Page</h1>
+  <h3>Adaptive Design with Media Queries</h3>
+  <p>
+    Resize your browser window or open this page on different devices to see how
+    the background color, image size, and text styles change.
+  </p>
+
+  <!-- Replace this with your own image if desired -->
+  <img
+    src="https://imgs.search.brave.com/GH6zgj1_fudldyal4zAifIFv9taMquMIR_hlpmbmKuQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9icm93/c2Vyc3RhY2sud3Bl/bmdpbmVwb3dlcmVk/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyNS8wMS9SZXNw/b25zaXZlLVdlYi1E/ZXNpZ25fLVdoYXQt/aXMtaXQtYW5kLUhv/dy10by1Vc2UtaXQu/cG5n"
+    alt="Responsive Example"
+    class="responsive-image"
+  />
+
+</body>
+</html>
